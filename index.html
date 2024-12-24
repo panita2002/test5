@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="logo">
-            <h1>Installation Guide</h1>
+            
         </div>
         <nav>
             <ul>
@@ -23,12 +23,35 @@
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <h2>Menu</h2>
+            <a href="/"
+            class="d-flex flex-column align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+            <img src="IMAGE/img1.png" alt="Installation Guide" class="mb-2" width="150"> <br>
+            <span class="fs-5 fw-semibold">เอกสารคู่มือการติดตั้งระบบงาน Custodian และการกำหนดค่าพารามิเตอร์ต่าง ๆ
+            </span>
+            </a>
             <ul>
-                <li><a href="#">Getting Started</a></li>
-                <li><a href="#">Installation Steps</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Troubleshooting</a></li>
+                <li>
+                    <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+                    data-bs-target="#configAndParameterCollapse" aria-expanded="false">
+                    <span class="fw-bold">CTD-GSB
+                    </span>
+                  </button>
+                  <div class="collapse" id="configAndParameterCollapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li>
+                        <a href="DTC-GSB/Introduction.html"class="btn-link">Introduction</a>
+                      </li>
+                      <li>
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                          data-bs-target="#setupEnvironmentVariable" aria-expanded="false">
+                          <i class="dropdown-toggle">
+                          </i>
+                          Setup Environment Variable
+                        </button>
+                      </li></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
             </ul>
         </aside>
 
@@ -36,7 +59,9 @@
         <main class="content">
             <h2>Installation Manual</h2>
             <div id="manual-content"></div> <!-- Content will be dynamically loaded here -->
-            
+            <ul>
+                
+            </ul>
             <div class="content-editor">
                 <button class="edit-btn" onclick="toggleEditor()">Edit Content</button>
                 <div class="editor" id="editor">
@@ -46,10 +71,6 @@
             </div>
         </main>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Installation Guide. All Rights Reserved.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>

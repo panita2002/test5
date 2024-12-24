@@ -21,8 +21,10 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
+    position: fixed;
+    background-color: #19587c;
     color: white;
+    width: 1357.5px;
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -55,8 +57,9 @@ header nav ul li a:hover {
 
 /* Sidebar */
 .sidebar {
+    position: fixed;
     width: 250px;
-    background-color: #333;
+    background-color: #ffffff;
     color: white;
     padding: 20px;
     min-height: 100vh;
@@ -77,7 +80,7 @@ header nav ul li a:hover {
 }
 
 .sidebar ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 16px;
 }
@@ -90,6 +93,9 @@ header nav ul li a:hover {
 .content {
     flex-grow: 1;
     padding: 20px;
+    height: 100vh; /* เต็มความสูงของหน้าจอ */
+    overflow-y: auto; /* เลื่อนเฉพาะแนวตั้งได้ */
+    overflow-x: hidden; /* ปิดการเลื่อนแนวนอน */
     background-color: white;
     border-left: 2px solid #ddd;
     margin-left: 250px; /* ให้เนื้อหาหลักอยู่ทางขวาของ Sidebar */
@@ -112,7 +118,7 @@ header nav ul li a:hover {
 
 .edit-btn {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #0aa9be;
     color: white;
     border: none;
     cursor: pointer;
@@ -120,7 +126,7 @@ header nav ul li a:hover {
 }
 
 .edit-btn:hover {
-    background-color: #555;
+    background-color: #3c89b6;
 }
 
 /* Editor */
