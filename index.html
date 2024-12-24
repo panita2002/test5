@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Installation Guide</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Manuals</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Getting Started</a></li>
+                <li><a href="#">Installation Steps</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Troubleshooting</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <h2>Installation Manual</h2>
+            <div id="manual-content"></div> <!-- Content will be dynamically loaded here -->
+            
+            <div class="content-editor">
+                <button class="edit-btn" onclick="toggleEditor()">Edit Content</button>
+                <div class="editor" id="editor">
+                    <textarea id="content-textarea" rows="10" cols="50"></textarea>
+                    <button class="save-btn" onclick="saveContent()">Save</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Installation Guide. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
